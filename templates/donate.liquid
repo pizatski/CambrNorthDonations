@@ -1,0 +1,71 @@
+{% block title %}Donate to CAMBr North's Trail Fund{% endblock %}
+{% block content %}
+	<div class="hero-unit donate-hero-unit" id="donate-container">
+		<form id="donateForm" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+			<h4>Let's build and maintain some mountain biking trails together.</h4>
+			<p>$1 = 1 Foot of Trail Development</p>
+			<div id="step1" class="donateStep">
+				<h4>How much would you like to give?</h4>
+				<ul id="donationAmounts">
+					{% for donationAmount in model.donationAmounts %}
+		  				<li><a class="btn btn-large btn-success donate-amt-btn" href="/donate#{{ donationAmount.amount }}" data-amount="{{ donationAmount.amount }}" title="Donate {{ donationAmount.amount }} dollars to CAMBr">${{ donationAmount.amount }}</a></li>
+					{% endfor %}
+						<li id="otherAmount"><label for="amount">Other Amount</label><input type="text" name="amount" id="amount" value="" required></li>
+				</ul>
+				<div class="btn btn-large" id="nextBtn">Next Step</div>
+			</div>
+			<div id="step2" class="donateStep">
+				<h4>Please enter your billing address</h4>
+				<input type="hidden" name="cmd" value="_donations">
+				<input type="hidden" name="business" value="north_paypal@cambr.org">
+				<input type="hidden" name="item_name" value="donation">
+				<input type="hidden" name="item_number" value="1">
+				<div class="donateFormField">
+					<label for="first_name">First Name (required)</label>
+					<input type="text" name="first_name" id="first_name" value="" minlength="2" required class="required">
+				</div>
+				<div class="donateFormField">
+					<label for="last_name">Last Name (required)</label>
+					<input type="text" name="last_name" id="last_name" value="" minlength="2" required class="required">
+				</div>
+				<div class="donateFormField">
+					<label for="address1">Street Address (required)</label>
+					<input type="text" name="address1" id="address1" value="" required>
+				</div>
+				<div class="donateFormField">
+					<label for="address2">Apt., Unit, Suite No.</label>
+					<input type="text" name="address2" id="address2" value="">
+				</div>
+				<div class="donateFormField">
+					<label for="city">City (required)</label>
+					<input type="text" name="city" id="city" value="" required>
+				</div>
+				<div class="donateFormField">
+					<select type="text" name="state" id="state">
+						{% for states in model.states %}
+							<option value="{{states.abbreviation}}">{{states.name}}</option>
+						{% endfor %}
+					</select>
+				</div>
+				<div class="donateFormField">
+					<label for="zip">Zip Code</label>
+					<input type="text" name="zip" id="zip" value="" required>
+				</div>
+				<div class="donateFormField">
+					<label for="night_phone_a">Phone Number (optional)</label>
+					<input type="text" name="night_phone_a" id="night_phone_a" value="">
+				</div>
+				<div class="donateFormField">
+					<label for="email">Email Address (required)</label>
+					<input type="text" name="email" id="email" value="" required>
+				</div>
+				<button type="submit" id="donateFormSubmit" name="submit" class="btn btn-primary btn-large" value="Complete Donation">Complete Donation</button>
+				<a href="javascript:;" class="btn btn-large" id="prevBtn">Go Back</a>
+				<p class="completion-text">When you click on 'complete donation', you will be taken to PayPal to securely complete your donation to CAMBr. Once there, you can donate with either your PayPal account or, if you don't have a PayPal account, a credit or debit card.</p>
+			</div>
+			<p class="footer-text">Every dollar you donate to CAMBr allows us to build one foot of natural surface trail in our parks: Andres Bike Park, Beulah Park, and Raceway Woods. Your continued support allows us to keep the trails maintained, clean, updated, safe and open for everyone to enjoy. The trails are built on public land and are open to the public to use without entry fees, so your financial support is what keeps tools in the hands of our volunteers and keeps these trails open. <strong>Thank you.</strong></p>
+			<p class="footer-text">If you'd rather make your donation the old fashioned way, have tools/equipment to donate, or would like to discuss additional partnerships with CAMBr please contact Brian at 847.269.0224 or <a href="mailto:blouis@cambr.org">blouis@cambr.org</a></p>
+			<p class="footer-text">You can also volunteer your time to help build and maintain our trails during our workdays. There is typically one per week in each of our parks. Find out more on our Facebook page at <a href="http://www.facebook.com/cambrnorth" target="_blank">http://www.facebook.com/cambrnorth</a>.</p>
+		</form>
+	</div>
+{% endblock %}

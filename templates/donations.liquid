@@ -1,0 +1,13 @@
+{% block title %}Model Example : Mixture + Bootstrap{% endblock %}
+{% block content %}
+	<div class="hero-unit">
+		<h1>{{ model.title }}</h1>
+		<h2>A basic example.</h2>
+		<p>List populated from the model:</p>
+		<ol>
+			{% for donationAmounts in model.donationAmounts %}
+  				<li><a class="btn" href="http://twitter.com/{{ person.twitter }}">{{ donationAmounts.amount }}</a></li>
+			{% endfor %}
+		</ol>
+	</div>
+{% endblock %}

@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Donate to CAMBr North's Trail Fund</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="public/css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+        <style>
+            body {
+                padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+            }
+        </style>
+        <link href="public/css/responsive.css" rel="stylesheet" type="text/css" media="all">
+        <!-- TODO: Complete this project :) -->
+    </head>
+    <body>
+        <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+            <a class="brand" href="#">CAMBr North</a>
+            <div class="nav-collapse collapse">
+                <ul class="nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="donate.html">Donate</a></li>
+                    <li><a href="mission.html">Mission</a></li>
+                    <li><a href="http://www.andrespark.org" target="_blank">Andres Bike Park</a></li>
+                    <li><a href="trails-Raceway-Woods">Raceway Woods</a></li>
+                    <li><a href="trails-Beulah-Park">Beulah Park</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+        <div class="container">
+            
+	<div class="hero-unit donate-hero-unit" id="donate-container">
+		<form id="donateForm" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+			<h4>Let's build and maintain some mountain biking trails together.</h4>
+			<p>$1 = 1 Foot of Trail</p>
+			<div id="step1" class="donateStep">
+				<h4>How much would you like to give?</h4>
+				<ul id="donationAmounts">
+					
+		  				<li><a class="btn btn-large btn-success donate-amt-btn" href="donate.html#1" data-amount="1" title="Donate 1 dollars to CAMBr">$1</a></li>
+					
+		  				<li><a class="btn btn-large btn-success donate-amt-btn" href="donate.html#5" data-amount="5" title="Donate 5 dollars to CAMBr">$5</a></li>
+					
+		  				<li><a class="btn btn-large btn-success donate-amt-btn" href="donate.html#10" data-amount="10" title="Donate 10 dollars to CAMBr">$10</a></li>
+					
+		  				<li><a class="btn btn-large btn-success donate-amt-btn" href="donate.html#25" data-amount="25" title="Donate 25 dollars to CAMBr">$25</a></li>
+					
+		  				<li><a class="btn btn-large btn-success donate-amt-btn" href="donate.html#50" data-amount="50" title="Donate 50 dollars to CAMBr">$50</a></li>
+					
+		  				<li><a class="btn btn-large btn-success donate-amt-btn" href="donate.html#100" data-amount="100" title="Donate 100 dollars to CAMBr">$100</a></li>
+					
+		  				<li><a class="btn btn-large btn-success donate-amt-btn" href="donate.html#250" data-amount="250" title="Donate 250 dollars to CAMBr">$250</a></li>
+					
+		  				<li><a class="btn btn-large btn-success donate-amt-btn" href="donate.html#500" data-amount="500" title="Donate 500 dollars to CAMBr">$500</a></li>
+					
+						<li id="otherAmount"><label for="amount">Other Amount</label><input type="text" name="amount" id="amount" value="" required=""></li>
+				</ul>
+				<div class="btn btn-large" id="nextBtn">Next Step</div>
+			</div>
+			<div id="step2" class="donateStep">
+				<h4>Please enter your billing address</h4>
+				<input type="hidden" name="cmd" value="_donations">
+				<input type="hidden" name="business" value="north_paypal@cambr.org">
+				<input type="hidden" name="item_name" value="donation">
+				<input type="hidden" name="item_number" value="1">
+				<div class="donateFormField">
+					<label for="first_name">First Name (required)</label>
+					<input type="text" name="first_name" id="first_name" value="" minlength="2" required="" class="required">
+				</div>
+				<div class="donateFormField">
+					<label for="last_name">Last Name (required)</label>
+					<input type="text" name="last_name" id="last_name" value="" minlength="2" required="" class="required">
+				</div>
+				<div class="donateFormField">
+					<label for="address1">Street Address (required)</label>
+					<input type="text" name="address1" id="address1" value="" required="">
+				</div>
+				<div class="donateFormField">
+					<label for="address2">Apt., Unit, Suite No.</label>
+					<input type="text" name="address2" id="address2" value="">
+				</div>
+				<div class="donateFormField">
+					<label for="city">City (required)</label>
+					<input type="text" name="city" id="city" value="" required="">
+				</div>
+				<div class="donateFormField">
+					<select type="text" name="state" id="state">
+						
+							<option value="AL">Alabama
+						
+							<option value="AK">Alaska
+						
+							<option value="AZ">Arizona
+						
+							<option value="AR">Arkansas
+						
+							<option value="CA">California
+						
+							<option value="CO">Colorado
+						
+							<option value="CT">Connecticut
+						
+							<option value="DE">Delaware
+						
+							<option value="DC">District Of Columbia
+						
+							<option value="FL">Florida
+						
+							<option value="GA">Georgia
+						
+							<option value="GU">Guam
+						
+							<option value="HI">Hawaii
+						
+							<option value="ID">Idaho
+						
+							<option value="IL">Illinois
+						
+							<option value="IN">Indiana
+						
+							<option value="IA">Iowa
+						
+							<option value="KS">Kansas
+						
+							<option value="KY">Kentucky
+						
+							<option value="LA">Louisiana
+						
+							<option value="ME">Maine
+						
+							<option value="MD">Maryland
+						
+							<option value="MA">Massachusetts
+						
+							<option value="MI">Michigan
+						
+							<option value="MN">Minnesota
+						
+							<option value="MS">Mississippi
+						
+							<option value="MO">Missouri
+						
+							<option value="MT">Montana
+						
+							<option value="NE">Nebraska
+						
+							<option value="NV">Nevada
+						
+							<option value="NH">New Hampshire
+						
+							<option value="NJ">New Jersey
+						
+							<option value="NM">New Mexico
+						
+							<option value="NY">New York
+						
+							<option value="NC">North Carolina
+						
+							<option value="ND">North Dakota
+						
+							<option value="OH">Ohio
+						
+							<option value="OK">Oklahoma
+						
+							<option value="OR">Oregon
+						
+							<option value="PA">Pennsylvania
+						
+							<option value="PR">Puerto Rico
+						
+							<option value="RI">Rhode Island
+						
+							<option value="SC">South Carolina
+						
+							<option value="SD">South Dakota
+						
+							<option value="TN">Tennessee
+						
+							<option value="TX">Texas
+						
+							<option value="UT">Utah
+						
+							<option value="VT">Vermont
+						
+							<option value="VA">Virginia
+						
+							<option value="WA">Washington
+						
+							<option value="WV">West Virginia
+						
+							<option value="WI">Wisconsin
+						
+							<option value="WY">Wyoming
+						
+					</select>
+				</div>
+				<div class="donateFormField">
+					<label for="zip">Zip Code</label>
+					<input type="text" name="zip" id="zip" value="" required="">
+				</div>
+				<div class="donateFormField">
+					<label for="night_phone_a">Phone Number (optional)</label>
+					<input type="text" name="night_phone_a" id="night_phone_a" value="">
+				</div>
+				<div class="donateFormField">
+					<label for="email">Email Address (required)</label>
+					<input type="text" name="email" id="email" value="" required="">
+				</div>
+				<button type="submit" id="donateFormSubmit" name="submit" class="btn btn-primary btn-large" value="Complete Donation">Complete Donation</button>
+				<a href="javascript:;" class="btn btn-large" id="prevBtn">Go Back</a>
+				<p class="completion-text">When you click on complete donation, you will be taken to PayPal to securely complete your donation to CAMBr. Once there, you can donate with either your PayPal account or, if you don't have a PayPal account, a credit or debit card.</p>
+			</div>
+			<p class="footer-text">Every dollar you donate to CAMBr allows us to build one foot of natural surface trail in our parks: Andres Bike Park, Beulah Park, and Raceway Woods. Your continued support allows us to keep the trails maintained, clean, updated, safe and open for everyone to enjoy. The trails are built on public land and are open to the public to use without entry fees, so your support is what keeps tools in the hands of our volunteers and keeps these trails open. <strong>Thank you.</strong></p>
+			<p class="footer-text">If you'd rather make your donation the old fashioned way, have tools/equipment to donate, or would like to discuss additional partnerships with CAMBr please contact Brian at 847.269.0224 or <a href="mailto:blouis@cambr.org">blouis@cambr.org</a></p>
+		</form>
+	</div>
+
+        </div>
+        <script src="public/js/jquery.min.js"></script>
+        <script src="public/js/bootstrap.js"></script>
+        <script src="public/js/donate.js"></script>
+        <script src="public/js/jquery.validation-min.js"></script>
+    </body>
+</html>

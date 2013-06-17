@@ -1,0 +1,39 @@
+{
+	"title": "Model",
+	"modelDate": "11.14.2012",
+	"people": [
+		{
+			"name": "Neil Kinnish",
+			"twitter": "@neiltak"
+		},
+		{
+			"name": "Mike Kus",
+			"twitter": "@mikekus"
+		},
+		{
+			"name": "Pete Nelson",
+			"twitter": "@petetak"
+		}
+	],
+
+	"donationAmounts" : [
+		{
+			"amount": "$1"
+		},
+		{
+			"amount": "$5"
+		},
+		{
+			"amount": "$10"
+		},
+		{
+			"amount": "$25"
+		},
+		{
+			"amount": "$50"
+		},
+		{
+			"amount": "$100"
+		}
+	]
+}
