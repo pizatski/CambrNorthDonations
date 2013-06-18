@@ -216,3 +216,4 @@ pip-log.txt
 
 #sublime ignore
 .sublime*
+.sublime-workspace
