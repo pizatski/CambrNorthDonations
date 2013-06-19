@@ -2120,31 +2120,41 @@ legend + .control-group {
 }
 /* line 756, C:\Users\pizat_000\Desktop\CambrNorthDonations\public\css\less\forms.less */
 .donate-hero-unit {
+  position: relative;
   background: url(../img/bg_donate.jpg) no-repeat 100% 0;
 }
 /* line 760, C:\Users\pizat_000\Desktop\CambrNorthDonations\public\css\less\forms.less */
+.donate-hero-unit .cambrLogo {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: url(../img/cambrlogo.png) 0 0 no-repeat;
+  height: 90px;
+  width: 160px;
+}
+/* line 770, C:\Users\pizat_000\Desktop\CambrNorthDonations\public\css\less\forms.less */
 #donate-container {
   background-color: #414141;
 }
-/* line 764, C:\Users\pizat_000\Desktop\CambrNorthDonations\public\css\less\forms.less */
+/* line 774, C:\Users\pizat_000\Desktop\CambrNorthDonations\public\css\less\forms.less */
 #donate-container h1,
 #donate-container h3 {
   color: #fff;
 }
-/* line 768, C:\Users\pizat_000\Desktop\CambrNorthDonations\public\css\less\forms.less */
+/* line 778, C:\Users\pizat_000\Desktop\CambrNorthDonations\public\css\less\forms.less */
 #donate-container .footer-text {
   font-size: 17px;
   line-height: 23px;
   margin: 15px 0;
 }
-/* line 775, C:\Users\pizat_000\Desktop\CambrNorthDonations\public\css\less\forms.less */
+/* line 785, C:\Users\pizat_000\Desktop\CambrNorthDonations\public\css\less\forms.less */
 .completion-text {
   color: #3f3f3f;
   font-size: 12px;
   line-height: 14px;
   margin: 10px 0;
 }
-/* line 782, C:\Users\pizat_000\Desktop\CambrNorthDonations\public\css\less\forms.less */
+/* line 792, C:\Users\pizat_000\Desktop\CambrNorthDonations\public\css\less\forms.less */
 .donate-amt-btn {
   width: 75px;
   margin-right: 10px;
@@ -6318,6 +6328,33 @@ a.badge:focus {
 /* line 22, C:\Users\pizat_000\Desktop\CambrNorthDonations\public\css\less\hero-unit.less */
 .hero-unit li {
   line-height: 30px;
+}
+/* line 28, C:\Users\pizat_000\Desktop\CambrNorthDonations\public\css\less\hero-unit.less */
+.footerspace {
+  background: #efefef;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+/* line 34, C:\Users\pizat_000\Desktop\CambrNorthDonations\public\css\less\hero-unit.less */
+.footerspace .cambrLogo {
+  height: 90px;
+  width: 160px;
+  margin: 10px auto;
+  background: url(../img/cambrlogo.png) no-repeat 0 0;
+  text-indent: -9999em;
+}
+/* line 43, C:\Users\pizat_000\Desktop\CambrNorthDonations\public\css\less\hero-unit.less */
+.footerspace .privacyPolicy {
+  display: block;
+  text-align: center;
+  padding: 10px 0;
+}
+/* line 49, C:\Users\pizat_000\Desktop\CambrNorthDonations\public\css\less\hero-unit.less */
+.footerspace p {
+  text-align: center;
 }
 /* line 7, C:\Users\pizat_000\Desktop\CambrNorthDonations\public\css\less\utilities.less */
 .pull-right {

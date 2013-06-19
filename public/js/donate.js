@@ -34,6 +34,7 @@
 
 			//click on the next button
 			$('#nextBtn').addClass("btn-primary");
+			$('#nextBtn').click();
 
 			//prevent default
 			return false;
@@ -60,11 +61,31 @@
 		});
 
 		$('#donateFormSubmit').on('click', function(){
-			// $("#step2").validate({
-  	// 			submitHandler: function(form) {
+			$("#step2").validate({
+  				submitHandler: function(form) {
+  					var submitTime = Math.round(new Date().getTime() / 100),
+  						transAmount = jQuery('#amount').val();
+
+  					//run the ecomm analytics object and submit
+  					ga('ecommerce:addTransaction', {
+					  'id': submitTime,					// Transaction ID. Required. (current time)
+					  'affiliation': 'CAMBr North',   	// Affiliation or store name.
+					  'revenue': transAmount,           // Grand Total.
+					});
+
+  					ga('ecommerce:addItem', {
+					  'id': submitTime,                 // Transaction ID. Required.
+					  'name': 'CAMBr North Donation',   // Product name. Required.
+					  'sku': 'CND1',                 	// SKU/code.
+					});
+					
+					//send ecomm analytics
+					ga('ecommerce:send');
+
+  					//submit the form
    					form.submit();
-  				//}
- 			// });
+  				}
+ 			});
 		});
 
 	});
